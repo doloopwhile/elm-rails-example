@@ -1,0 +1,6 @@
+require 'elm/rails'
+require 'elm/rails/railtie'
+require 'elm/rails/engine'
+require 'elm/rails/template'
+require 'elm/rails/template_handler'
+# require 'elm/rails/version'

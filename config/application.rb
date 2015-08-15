@@ -23,5 +23,12 @@ module ElmRailsExample
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.autoload_paths += %W(#{config.root}/lib)
+    config.before_initialize do |app|
+      if ::Rails::VERSION::MAJOR >= 4 || app.config.assets.enabled
+        require 'elm/rails/template'
+        require 'sprockets'
+        Sprockets.register_engine '.elm', Elm::Rails::Template
+      end
+    end
   end
 end

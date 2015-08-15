@@ -2,7 +2,7 @@ require 'elm/rails/compiler'
 
 class Elm::Rails::TemplateHandler
   def call(template)
-    'hello'
+    'alert("hello")'
   end
 end
 

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root to: 'top#index'
   get 'top/index'
+  get 'top/page1'
+  get 'top/page2'
+  get 'top/page3'
+  get 'top/page4'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -2,6 +2,12 @@ class TopController < ApplicationController
   def index
   end
 
+  def page0
+  end
+
+  def page1
+  end
+
   def page2
   end
 
